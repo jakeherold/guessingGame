@@ -19,6 +19,7 @@ var ansKey = {
     ansY: "y",
     ansN: "n",
     ansZ: "z"
+
 };
 
 var score = new Object ();
@@ -70,7 +71,11 @@ if ((((question3.toLowerCase()) === ansKey.ans3)||((question3.toLowerCase()) ===
 }
 //return results to user//
 
-alert("Thank you for taking my quiz, " + greetScript + "! " + "Your score is " + (score.q1 + score.q2 + score.q3) + "/3");
+alert("Thank you so much for taking my quiz, " + greetScript + "! " + "Your score is " + (score.q1 + score.q2 + score.q3) + "/3");
 
+}
+
+function credits (){
+  alert("Created by Jake Herold in October 2015");
 }
 
