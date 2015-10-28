@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Guessing  Game </title>
+    <script src="game.js"></script>
+</head>
+<body>
+    <h1>Guessing Game v1.2</h1>
+
+    <p>In order to play, right click the screen. Then, select 'Inspect element'. Finally, pick 'console' to see results!</p>
+
+    <h2> JavaScript Explaination </h2>
+
+    <h3> Greet User </h3>
+
+    <p>  The opening section of JavaScript uses a variable called "greetScript", which promts a welcome for the user, asks them their name, and then returns a message welcoming them by name.</p>
+
+    <h3> Questions </h3>
+
+    <p> The questions are all their own window-prompted variables. They are then set, based on user response, to certain string values.
+
+    Version 1.1 Update: questions now imput data using ".toLowerCase" in order to adjust for any "Yes" vs "yes" discrepencies.
+
+    Version 1.2 update: Originally the three question variables were in their own section. But, by putting them between the if/then statements it alternates the questions/answer prompt/alert boxes.
+
+    </p>
+
+    <h3> Answer Key and scoring</h3>
+
+    <p> I then created a object called ansKey, to store the proper responses to the questions of the guessing game. There are four answers to three questions to account for users typing "zero" or "0" on their response to question 3.
+
+    This section also sets up "score" as an object, so that it can be filled with the proper properties by a later function  </p>
+
+    <h3> Score vs. ansKey </h3>
+
+    <p>This section compares each question to the answer key, and generates a numeric response for each one. The concatenated data is used later by the final scoring section. THis is also where the reply strings for the individual questions are held.
+
+    note: there is a critical "or" comparison section to account for the afore mentioned "zero" vs "0" problem.
+    </p>
+
+    <h3> Show the user how they did </h3>
+
+    <p>The final section prints a score synopsis, after the previous question responses have been shown .
+
+    Version 1.1 updates: added "alerts" to pop up following the three prompted questions. They relay the question </p>
+
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-function imma(){
+
 
     //Opening prompt and greeting//
 var greetScript = prompt("Hello! Welcome to the Jake Herold Quiz! Before we begin, what's your name, friend?");
@@ -10,7 +10,7 @@ if (greetScript != null){
 }
 
 
-//answer key for questions and setting the score to object so that it can be messed with down the line//
+//answer key for questions and setting the score as an object so that it can be messed with down the line//
 var ansKey = {
     ans1: "no",
     ans2: "yes",
@@ -55,7 +55,7 @@ if ((question2.toLowerCase()) === ansKey.ans2){
 //Because question3 requires either "0" or "zero", the if/then is modified to take either result as correct//
 var question3 = prompt("How many tattoos do I have? ");
 
-if (((question3.toLowerCase()) === ansKey.ans3)||((question3.toLowerCase()) === ansKey.ans4)){
+if ((question3 === ansKey.ans3)||((question3.toLowerCase()) === ansKey.ans4)){
     score.q3 = 1;
     console.log("Q3: Quite right! Though I want tattoos, I don't have any yet.");
     alert("Q3: Quite right! Though I want tattoos, I don't have any yet.");
@@ -68,5 +68,4 @@ if (((question3.toLowerCase()) === ansKey.ans3)||((question3.toLowerCase()) === 
 
 alert("Thank you for taking my quiz, " + greetScript + "! " + "Your score is " + (score.q1 + score.q2 + score.q3) + "/3");
 
-}
 
