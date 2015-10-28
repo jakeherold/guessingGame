@@ -15,7 +15,10 @@ var ansKey = {
     ans1: "no",
     ans2: "yes",
     ans3: "0",
-    ans4: "zero"
+    ans4: "zero",
+    ansY: "y",
+    ansN: "n",
+    ansZ: "z"
 };
 
 var score = new Object ();
@@ -31,7 +34,7 @@ console.log("SCORES");
 
 var question1 = prompt("Did I grow up in Poetland?");
 
-if ((question1.toLowerCase()) === ansKey.ans1){
+if (((question1.toLowerCase()) === ansKey.ans1)||((question1.toLowerCase()) === ansKey.ansN)){
     score.q1 = 1;
     console.log("Q1: you're right! I grew up in Portland, not Poetland!");
     alert("Q1: you're right! I grew up in Portland, not Poetland!");
@@ -43,7 +46,7 @@ if ((question1.toLowerCase()) === ansKey.ans1){
 
 var question2 = prompt("Do I play Guitar?");
 
-if ((question2.toLowerCase()) === ansKey.ans2){
+if (((question2.toLowerCase()) === ansKey.ans2)||((question2.toLowerCase()) === ansKey.ansY)){
     score.q2 = 1;
     console.log("Q2: You're so right! I do play the guitar.");
     alert("Q2: You're so right! I do play the guitar.");
@@ -55,7 +58,7 @@ if ((question2.toLowerCase()) === ansKey.ans2){
 //Because question3 requires either "0" or "zero", the if/then is modified to take either result as correct//
 var question3 = prompt("How many tattoos do I have? ");
 
-if (((question3.toLowerCase()) === ansKey.ans3)||((question3.toLowerCase()) === ansKey.ans4)){
+if ((((question3.toLowerCase()) === ansKey.ans3)||((question3.toLowerCase()) === ansKey.ans4)) || ((question3.toLowerCase()) === ansKey.ansZ)){
     score.q3 = 1;
     console.log("Q3: Quite right! Though I want tattoos, I don't have any yet.");
     alert("Q3: Quite right! Though I want tattoos, I don't have any yet.");
