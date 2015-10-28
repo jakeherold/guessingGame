@@ -75,6 +75,8 @@ alert("Thank you so much for taking my quiz, " + greetScript + "! " + "Your scor
 
 }
 
+//Button to inform user about the creator of this page//
+
 function credits (){
   alert("Created by Jake Herold in October 2015");
 }
