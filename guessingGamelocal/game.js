@@ -2,20 +2,21 @@ function imma(){
 
     //Opening prompt and greeting//
 var greetScript = prompt("Hello! Welcome to the Jake Herold Quiz! Before we begin, what's your name, friend?");
+console.log(greetScript);
 
 
-if (greetScript != ""){
-  confirm("Good to see you, " + greetScript + "!");
+if ((greetScript != "")&&(greetScript != null)) {
+  confirm("1 Good to see you, " + greetScript + "!");
 
-} else if (greetScript === ""){
+} else if ((greetScript === "")||(greetScript !== null)){
   confirm("Well now. Look at you, trying to return null values. Knock that off. Now your name is 'Batman'. Are you happy now?");
   greetScript = ("Batman");
-  confirm("Good to see you, " + greetScript + "!");
+  confirm("2 Good to see you, " + greetScript + "!");
 
 } else {
   confirm("Well now. Look at you, trying to return null values. Knock that off. Now your name is 'Batman'. Are you happy now?");
   greetScript = ("Batman");
-  confirm("Good to see you, " + greetScript + "!");
+  confirm("3 Good to see you, " + greetScript + "!");
 };
 
 
