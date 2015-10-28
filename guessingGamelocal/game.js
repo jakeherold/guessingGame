@@ -55,7 +55,8 @@ if (((question2.toLowerCase()) === ansKey.ans2)||((question2.toLowerCase()) === 
   console.log("Q2: Actually, I do play the guitar.");
   alert("Q2: Actually, I do play the guitar.");
 }
-//Because question3 requires either "0" or "zero", the if/then is modified to take either result as correct//
+//Because question3 requires either "0", "z", or "zero", the if/then is modified to take any result as correct//
+
 var question3 = prompt("How many tattoos do I have? ");
 
 if ((((question3.toLowerCase()) === ansKey.ans3)||((question3.toLowerCase()) === ansKey.ans4)) || ((question3.toLowerCase()) === ansKey.ansZ)){
