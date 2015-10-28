@@ -4,10 +4,19 @@ function imma(){
 var greetScript = prompt("Hello! Welcome to the Jake Herold Quiz! Before we begin, what's your name, friend?");
 
 
-if (greetScript != null){
+if (greetScript != ""){
   confirm("Good to see you, " + greetScript + "!");
 
-}
+} else if (greetScript === ""){
+  confirm("Well now. Look at you, trying to return null values. Knock that off. Now your name is 'Batman'. Are you happy now?");
+  greetScript = ("Batman");
+  confirm("Good to see you, " + greetScript + "!");
+
+} else {
+  confirm("Well now. Look at you, trying to return null values. Knock that off. Now your name is 'Batman'. Are you happy now?");
+  greetScript = ("Batman");
+  confirm("Good to see you, " + greetScript + "!");
+};
 
 
 //answer key for questions and setting the score to object so that it can be messed with down the line//
