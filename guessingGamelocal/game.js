@@ -6,23 +6,23 @@ console.log(greetScript);
 
 //Basic response for any normal name or characters given for greetScript//
 if ((greetScript != "")&&(greetScript != null)) {
-  confirm("1 Good to see you, " + greetScript + "!");
+  confirm("Good to see you, " + greetScript + "!");
 
 //if user confirms or cancels a blank prompt they are assigned the name batman and politely repirmanded for their shanannigans//
 } else if ((greetScript === "")||(greetScript !== null)){
   confirm("Well now. Look at you, trying to return null values. Knock that off. Now your name is 'Batman'. Are you happy now?");
   greetScript = ("Batman");
-  confirm("2 Good to see you, " + greetScript + "!");
+  confirm("Good to see you, " + greetScript + "!");
 
 //final user error failsafe for the greetScript prompt
 } else {
   confirm("Well now. Look at you, trying to return null values. Knock that off. Now your name is 'Batman'. Are you happy now?");
   greetScript = ("Batman");
-  confirm("3 Good to see you, " + greetScript + "!");
+  confirm("Good to see you, " + greetScript + "!");
 };
 
 
-//answer key for questions and setting the score to object so that it can be messed with down the line//
+//sets an answer key as an object. Is used later in the code when JavaScript compares user response from questions to the ansKey. User responses are stored as keys in the new Score object. //
 var ansKey = {
     ans1: "no",
     ans2: "yes",
