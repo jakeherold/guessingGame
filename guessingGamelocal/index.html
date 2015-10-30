@@ -3,66 +3,38 @@
 <head>
     <title>Jake's Guessing  Game </title>
     <script src="game.js"></script>
-
 </head>
 <body style="text-align: center; background-color: BurlyWood;">
     <h1>Jake's Guessing Game v1.0</h1>
-
-
     <p style="font-family: Helvetica, sans-serif; font-size: 18px; text-align: center; color: black;"> <b>In order to play, click this huge button. Then, if you're on chrome, select 'Inspect element'. Finally, pick 'console' to see results! </b></p>
 
-    <button style="width: 50%; height: 80px; background-color: #CC0000; font-size: 20px; background-color: DarkCyan; border: 4px, black;" onclick="imma()">
-    IMMA BUTTON
-    </button>
+    <button style="width: 50%; height: 80px; background-color: #CC0000; font-size: 20px; background-color: DarkCyan; border: 4px, black;" onclick="imma()">Imma Button</button>
+    <button style="width: 50%; height: 80px; background-color: #CC0000; font-size: 20px; background-color: DarkCyan; border: 4px, black;" onclick="clearFunction()">Shrinkray!</button>
 
-    <h2> JavaScript Explaination </h2>
-
-    <h3> Greet User </h3>
-
-    <p>  The opening section of JavaScript uses a variable called "greetScript", which promts a welcome for the user, asks them their name, and then returns a message welcoming them by name.</p>
-
-    <h3> Questions </h3>
-
-    <p> The questions are all their own window-prompted variables. They are then set, based on user response, to certain string values.
-
+    <h2 id = "clearh2-1"> JavaScript Explaination </h2>
+    <h3 id = "clearh3-1"> Greet User </h3>
+    <p id = "clearp-1">  The opening section of JavaScript uses a variable called "greetScript", which promts a welcome for the user, asks them their name, and then returns a message welcoming them by name.</p>
+    <h3 id = "clearh3-6"> Questions </h3>
+    <p id = "clearp-2"> The questions are all their own window-prompted variables. They are then set, based on user response, to certain string values.
     Version 1.1 Update: questions now imput data using ".toLowerCase" in order to adjust for any "Yes" vs "yes" discrepencies.
-
     Version 1.2 update: Originally the three question variables were in their own section. But, by putting them between the if/then statements it alternates the questions/answer prompt/alert boxes.
-
     </p>
-
-    <h3> Answer Key and scoring</h3>
-
-    <p> I then created a object called ansKey, to store the proper responses to the questions of the guessing game. There are four answers to three questions to account for users typing "zero" or "0" on their response to question 3.
-
+    <h3 id = "clearh3-2"> Answer Key and scoring</h3>
+    <p id = "clearp-3"> I then created a object called ansKey, to store the proper responses to the questions of the guessing game. There are four answers to three questions to account for users typing "zero" or "0" on their response to question 3.
     This section also sets up "score" as an object, so that it can be filled with the proper properties by a later function
-
     3.1 update: This is where error correction takes place. Specifically, the values "y", "n", and "z" are set as acceptable substitues for "yes", "no", and "zero" respectively.
-
     3.1 update: This is also where if/else and logic statements were used. During the updates to correct for user error, the logic sections had to be expanded. Specifically, they had to calculate if the answer given was equal to either the proper string answer or single letter answer.
      </p>
-
-    <h3> Score vs. ansKey </h3>
-
-    <p>This section compares each question to the answer key, and generates a numeric response for each one. The concatenated data is used later by the final scoring section. THis is also where the reply strings for the individual questions are held.
-
+    <h3 id = "clearh3-4"> Score vs. ansKey </h3>
+    <p id ="clearp-4">This section compares each question to the answer key, and generates a numeric response for each one. The concatenated data is used later by the final scoring section. THis is also where the reply strings for the individual questions are held.
     note: there is a critical "or" comparison section to account for the afore mentioned "zero" vs "0" problem.
     </p>
-
-    <h3> Show the user how they did </h3>
-
-    <p>The final section prints a score synopsis, after the previous question responses have been shown .
-
+    <h3 id = "clearh3-5"> Show the user how they did </h3>
+    <p id = "clearp-5">The final section prints a score synopsis, after the previous question responses have been shown .
     Version 1.1 updates: added "alerts" to pop up following the three prompted questions. They relay the question </p>
-
-
-
-
     <button style="width: 50%; height: 80px; background-color: #CC0000; font-size: 20px; background-color: DarkCyan;" onclick="credits()">
     WHO DID THIS?
     </button>
-
-
 </body>
 
 </html>
