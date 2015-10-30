@@ -1,17 +1,3 @@
-function clearFunction () {
-document.getElementById("clearh2-1").innerHTML = " "
-document.getElementById("clearh3-1").innerHTML = " "
-document.getElementById("clearp-1").innerHTML = " "
-document.getElementById("clearh3-2").innerHTML = " "
-document.getElementById("clearp-2").innerHTML = " "
-document.getElementById("clearp-3").innerHTML = " "
-document.getElementById("clearh3-4").innerHTML = " "
-document.getElementById("clearp-4").innerHTML = " "
-document.getElementById("clearh3-5").innerHTML = " "
-document.getElementById("clearp-5").innerHTML = " "
-document.getElementById("clearh3-6").innerHTML = " "
-}
-
 function imma(){
   //Opening prompt and greeting//
   var greetScript = prompt("Hello! Welcome to the Jake Herold Quiz! Before we begin, what's your name, friend?");
@@ -100,8 +86,22 @@ function imma(){
 
 }
 
-//Button to inform user about the creator of this page//
+//Button to shrink down all paragraph and heading elements//
+function clearFunction () {
+document.getElementById("clearh2-1").innerHTML = " "
+document.getElementById("clearh3-1").innerHTML = " "
+document.getElementById("clearp-1").innerHTML = " "
+document.getElementById("clearh3-2").innerHTML = " "
+document.getElementById("clearp-2").innerHTML = " "
+document.getElementById("clearp-3").innerHTML = " "
+document.getElementById("clearh3-4").innerHTML = " "
+document.getElementById("clearp-4").innerHTML = " "
+document.getElementById("clearh3-5").innerHTML = " "
+document.getElementById("clearp-5").innerHTML = " "
+document.getElementById("clearh3-6").innerHTML = " "
+}
 
+//Button to inform user about the creator of this page//
 function credits (){
   alert("Created by Jake Herold in October 2015");
 }
