@@ -48,11 +48,12 @@ function imma(){
     score.q1 = 1;
     console.log("Q1: you're right! I grew up in Portland, not Poetland!");
     document.getElementById('info').innerHTML ="Q1: you're right! I grew up in Portland, not Poetland!";
-    document.getElementById('img').innerHTML = "<img src='images/happy1.jpg'></img>";
+    //document.getElementById('img').innerHTML = "<img src='images/happy1.jpg'></img>";
   } else {
     score.q1 = 0;
     console.log("Q1: Oh! So sorry! I grew up in Portland, not Poetland!");
     document.getElementById('info').innerHTML ="Q1: Oh! So sorry! I grew up in Portland, not Poetland!";
+    //document.getElementById('img').innerHTML = "<img src='images/sad1.png'></img>";
   }
 
   var question2 = prompt("Do I play Guitar?");
@@ -82,6 +83,13 @@ function imma(){
   //return results to user//
 
   document.getElementById('info').innerHTML ="Thank you so much for taking my quiz, " + greetScript + "! " + "Your score is " + (score.q1 + score.q2 + score.q3) + "/3";
+
+  if ((score.q1 + score.q2 + score.q3) < 3){
+    document.getElementById('img').innerHTML = "<img src='images/sad1.png'></img>";
+  }
+  else {
+    document.getElementById('img').innerHTML = "<img src='images/happy1.jpg'></img>";
+  }
 }
 //Button to shrink down all paragraph and heading elements//
 function clearFunction () {
