@@ -1,0 +1,36 @@
+{
+  "name": "guessinggame",
+  "version": "1.0.0",
+  "description": "A simple rendition of the first code 201 project for GULP testing",
+  "main": "game.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/jakeherold/guessingGame"
+  },
+  "keywords": [
+    "DOM",
+    "basics",
+    "promps",
+    "confirm",
+    "gulp",
+    "html",
+    "css",
+    "javascrip",
+    "terrible",
+    "first",
+    "drafts"
+  ],
+  "author": "Jake Herold",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.7",
+    "mocha": "^2.4.5"
+  }
+}
