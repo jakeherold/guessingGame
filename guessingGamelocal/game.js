@@ -1,6 +1,8 @@
 function imma(){
   //Opening prompt and greeting//
-  var greetScript = prompt("Hello! Welcome to the Jake Herold Quiz! Before we begin, what's your name, friend?");
+  var greetScript = document.getElementById("output");
+
+  prompt("Hello! Welcome to the Jake Herold Quiz! Before we begin, what's your name, friend?");
   //Basic response for any normal name or characters given for greetScript//
   if ((greetScript != "")&&(greetScript != null)) {
     document.getElementById('info').innerHTML = "Good to see you, " + greetScript + "!";
@@ -47,12 +49,12 @@ function imma(){
   if (((question1.toLowerCase()) === ansKey.ans1)||((question1.toLowerCase()) === ansKey.ansN)){
     score.q1 = 1;
     console.log("Q1: you're right! I grew up in Portland, not Poetland!");
-    document.getElementById('info').innerHTML ="Q1: you're right! I grew up in Portland, not Poetland!";
+   document.getElementById('info').innerHTML ="<p class=“right” style=“color:red">"Q1: you're right! I grew up in Portland, not Poetland!</p>";
     //document.getElementById('img').innerHTML = "<img src='images/happy1.jpg'></img>";
   } else {
     score.q1 = 0;
     console.log("Q1: Oh! So sorry! I grew up in Portland, not Poetland!");
-    document.getElementById('info').innerHTML ="Q1: Oh! So sorry! I grew up in Portland, not Poetland!";
+    //document.getElementById('info').innerHTML ="<p class= 'wrong';>Q1: Oh! So sorry! I grew up in Portland, not Poetland!</p>";
     //document.getElementById('img').innerHTML = "<img src='images/sad1.png'></img>";
   }
 
